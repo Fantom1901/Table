@@ -75,7 +75,7 @@ export default function App() {
                 ))}
               </thead>
               <tbody>
-                {hotelTable.getRowModel().rows.map((row, rIdx) => (
+                {hotelTable.getRowModel().rows.map((row) => (
                   <tr key={row.id} className="border-b border-slate-200 hover:bg-slate-50/50 transition-colors">
                     {row.getVisibleCells().map(cell => {
                       const id = cell.column.id;
